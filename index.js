@@ -9,7 +9,9 @@ searchButton.addEventListener("click", function () {
         .getElementById("search-input")
         .value.toLowerCase();
 
-    fetch(`http://www.omdbapi.com/?s=${searchInput}&type=movie&apikey=247cc408`)
+    fetch(
+        `https://www.omdbapi.com/?s=${searchInput}&type=movie&apikey=247cc408`
+    )
         .then((res) => res.json())
         .then((data) => {
             if (data.Response === "True") {
@@ -30,7 +32,7 @@ searchButton.addEventListener("click", function () {
 });
 
 function render(movieName) {
-    fetch(`http://www.omdbapi.com/?t=${movieName}&apikey=247cc408`)
+    fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=247cc408`)
         .then((res) => res.json())
         .then((data) => {
             const movie = document.createElement("div");
