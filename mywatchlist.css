@@ -1,0 +1,27 @@
+.results {
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 1rem;
+}
+
+.empty-watchlist {
+    text-align: center;
+}
+.empty-watchlist p {
+    margin: 20px 0;
+}
+
+.add-movies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+.empty-message {
+    color: #c5c4c4;
+}
+
+.watchlist-icon {
+    margin-right: 10px;
+}
